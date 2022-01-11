@@ -483,13 +483,18 @@ unsafe fn process_ghost(target: U16String, payload_buffer: *mut c_void, size_pay
 fn main() {
     unsafe {
         let args: Vec<String> = args().collect();
+
+        if args.len() == 1{
+
+            println!("Usage: process_ghosting.exe target payload");
+            exit(1);
+        }
+
+
         let path_target = &args[1];
         let path_payload = &args[2];
 
-        if args.is_empty(){
 
-            println!("Usage: process_ghosting.exe target payload")
-        }
         //let mut set_target: UNICODE_STRING = zeroed::<UNICODE_STRING>();
 
         let (buf_payload, size_payload) = read_payload(path_payload.to_string());
