@@ -8,8 +8,14 @@ Modo de Uso
 
 process_ghosting.exe  target  payload
 
-targert:  Proceso del que deseamos tomar environment y parametros para inyectar en nuestro proceso <br> 
+target:  Proceso del que deseamos tomar environment y parametros para inyectar en nuestro proceso <br> 
 payload:  Archivo ejecutable que deseamos inyectar en nuestro proceso.
+<h1>Video Poc</h1>
+
+[![Process GHosting ](img/process.png)](https://www.youtube.com/watch?v=R869MTTogqw)
+
+
+
 
 ![](img/proc_ghost.png)
 
