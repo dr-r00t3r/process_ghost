@@ -1,15 +1,15 @@
 # process_ghost
 
 Este proyecto tiene por objetivo generar un POC de Process Ghosting en Rust.<br>
-Tecnica presentdata por [Gabriel Landau](https://twitter.com/GabrielLandau): <br>
+Tecnica presentada por [Gabriel Landau](https://twitter.com/GabrielLandau): <br>
 https://www.elastic.co/blog/process-ghosting-a-new-executable-image-tampering-attack
 
 Modo de Uso
 
 process_ghosting.exe  target  payload
 
-target:  Proceso del que deseamos tomar environment y parametros para inyectar en nuestro proceso <br> 
-payload:  Archivo ejecutable que deseamos inyectar en nuestro proceso.
+target:  Ejecutable(PE)   para suplantar environment y parametros   <br> 
+payload:  Ejecutable(PE) Codigo Malicioso.
 <h1>Video Poc</h1>
 
 [![Process GHosting ](img/process.png)](https://www.youtube.com/watch?v=R869MTTogqw)
@@ -33,6 +33,9 @@ Caracteristicas:
 
 https://github.com/hasherezade/process_ghosting <br>
 https://doc.rust-lang.org/stable/std/mem/fn.transmute.html
+https://doc.rust-lang.org/std/ptr/index.html
+https://gist.github.com/hfiref0x/a9911a0b70b473281c9da5daea9a177f
+
 
 Este proyecto es únicamente para fines educativos y el autor no se hace responsable por su uso indebido.
 
