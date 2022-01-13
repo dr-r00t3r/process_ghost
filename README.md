@@ -26,7 +26,7 @@ Caracteristicas:
 + Secciones mapeados con permisos originales (no `RWX`)
 + Payload conectado al PEB como modulo principal
 + Inyeccion Remota soportada (Pero solo en un proceso recien creado)
-+ El proceso es creado en un modulo sin nombre(`GetProcessImageFileName` retorna un strin vacio)
++ El proceso es creado en un modulo sin nombre(`GetProcessImageFileName` retorna un string vacio)
 
 
 <h1>Links de Inpsiración:</h1>
